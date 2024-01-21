@@ -11,4 +11,3 @@ class Patient(models.Model):
     height = models.IntegerField()
     weight = models.IntegerField()
     location = models.CharField(max_length=100)
-    underlying_disease = models.CharField(max_length=100, null=True)

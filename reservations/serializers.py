@@ -9,3 +9,8 @@ class ReservationWithPatientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
         fields = '__all__'
+
+class ReservationUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reservation
+        fields = ['underlying_disease', 'visit_for', 'prescribe']
